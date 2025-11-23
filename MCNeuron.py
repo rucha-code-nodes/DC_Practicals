@@ -1,16 +1,12 @@
 
 
-
-## **Code for AND Gate (Simple MP Neuron)**
-
-
 # AND gate using MP neuron
 
-# inputs
+
 x1 = [0, 0, 1, 1]
 x2 = [0, 1, 0, 1]
 
-# weights and threshold
+
 w1 = 1
 w2 = 1
 threshold = 2    # neuron fires only if both inputs are 1
@@ -24,7 +20,7 @@ for i in range(4):
         print(x1[i], x2[i], "   0")
 
 
-##  **Code for OR Gate (Simple MP Neuron)**
+
 
 
 # OR gate using MP neuron
@@ -34,7 +30,7 @@ x2 = [0, 1, 0, 1]
 
 w1 = 1
 w2 = 1
-threshold = 1    # neuron fires if ANY input is 1
+threshold = 1    
 
 print("x1  x2  Output")
 for i in range(4):
@@ -45,7 +41,7 @@ for i in range(4):
         print(x1[i], x2[i], "   0")
 
 
-##  **Code for NAND Gate (Simple MP Neuron)**
+
 
 
 # NAND gate using MP neuron
@@ -80,6 +76,7 @@ def mp_neuron(inputs, threshold):
 
 # Test AND Gate
 print("AND Gate:", mp_neuron([1, 1], 2))  # 1+1 >= 2 → 1
+print("AND Gate:", mp_neuron([1, 0], 2))  # 1+1 >= 2 → 1
 
 # Test OR Gate
 print("OR Gate:", mp_neuron([1, 0], 1))   # 1+0 >= 1 → 1
