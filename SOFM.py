@@ -8,8 +8,8 @@ data = np.array([A,B,C])
 
 w = np.random.rand(3,9)
 
-lr = 0.2       # small
-epochs = 20    # more training
+lr = 0.2      
+epochs = 20    
 
 for _ in range(epochs):
     for x in data:
@@ -28,6 +28,3 @@ print("C recognized by neuron:", test(C))
 
 
 
-# * **`rand()`** → gives **random numbers between 0 and 1**.
-# * **`linalg.norm()`** → calculates the **distance between two vectors**.
-# * **`argmin()`** → returns the **index of the smallest value**.
