@@ -24,4 +24,4 @@ while s != target:
     print("Gen", gen, ":", s)
 
 print("\nReached:", s)
-#`zip()` simply **pairs elements from two lists one-by-one**, like matching socks together. 🧦😊
+
