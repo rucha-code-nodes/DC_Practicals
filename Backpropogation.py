@@ -4,7 +4,7 @@ import math
 
 
 x = 0.0
-y = 1.0   # expected output
+y = 1.0   
 
 
 w1 = 0.5   
@@ -16,11 +16,11 @@ def sigmoid(z):
 
 
 for _ in range(5):
-    # Forward Pass
+ 
     h = sigmoid(x*w1)      
     o = sigmoid(h*w2)    
 
-    # Error
+ 
     error = y - o
 
  
